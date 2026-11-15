@@ -185,14 +185,14 @@ export const SectionInstagram: React.FC<SectionInstagramProps> = ({ language }) 
       </div>
 
       {/* Bottom Outlined CTA Button */}
-      <div className="mt-6 md:mt-8 text-center">
+      <div className="mt-6 md:mt-8 px-6 md:px-0 text-center">
         <a
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-flip"
+          className="btn btn-flip w-full md:w-auto text-center"
         >
-          <span className="btn-flip__wrap flex items-center gap-2">
+          <span className="btn-flip__wrap">
             <span>{t.cta}</span>
             <span>{t.cta}</span>
           </span>

@@ -260,25 +260,25 @@ export const SectionTripAdvisor: React.FC<SectionTripAdvisorProps> = ({ language
 
       {/* Single Review Carousel Container */}
       <div
-        className="relative max-w-3xl mx-auto px-6 sm:px-14 py-4 z-10"
+        className="relative max-w-3xl mx-auto px-2 sm:px-6 md:px-14 py-4 z-10"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Navigation Left Arrow */}
+        {/* Navigation Left Arrow (Desktop only) */}
         <button
           onClick={handlePrev}
-          className="absolute -left-2 sm:left-0 top-1/2 -translate-y-1/2 p-2 text-[#4c5b72]/60 hover:text-[#4c5b72] hover:bg-[#4c5b72]/10 rounded-full transition-colors z-20 cursor-pointer"
+          className="hidden md:block absolute -left-2 sm:left-0 top-1/2 -translate-y-1/2 p-2 text-[#4c5b72]/60 hover:text-[#4c5b72] hover:bg-[#4c5b72]/10 rounded-full transition-colors z-20 cursor-pointer"
           aria-label={language === 'pt' ? 'Avaliação anterior' : 'Previous review'}
         >
           <ChevronLeft className="w-6 h-6 sm:w-7 sm:h-7" />
         </button>
 
-        {/* Navigation Right Arrow */}
+        {/* Navigation Right Arrow (Desktop only) */}
         <button
           onClick={handleNext}
-          className="absolute -right-2 sm:right-0 top-1/2 -translate-y-1/2 p-2 text-[#4c5b72]/60 hover:text-[#4c5b72] hover:bg-[#4c5b72]/10 rounded-full transition-colors z-20 cursor-pointer"
+          className="hidden md:block absolute -right-2 sm:right-0 top-1/2 -translate-y-1/2 p-2 text-[#4c5b72]/60 hover:text-[#4c5b72] hover:bg-[#4c5b72]/10 rounded-full transition-colors z-20 cursor-pointer"
           aria-label={language === 'pt' ? 'Avaliação seguinte' : 'Next review'}
         >
           <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7" />
@@ -347,14 +347,14 @@ export const SectionTripAdvisor: React.FC<SectionTripAdvisorProps> = ({ language
       </div>
 
       {/* Outlined TripAdvisor External Link CTA */}
-      <div className="mt-8 text-center relative z-10">
+      <div className="mt-8 px-2 md:px-0 text-center relative z-10">
         <a
           href={TRIPADVISOR_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-flip"
+          className="btn btn-flip w-full md:w-auto text-center"
         >
-          <span className="btn-flip__wrap flex items-center gap-2">
+          <span className="btn-flip__wrap">
             <span>{t.cta}</span>
             <span>{t.cta}</span>
           </span>

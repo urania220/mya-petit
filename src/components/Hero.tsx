@@ -34,7 +34,7 @@ export const Hero: React.FC<HeroProps> = ({ language, onExploreMenu }) => {
             <div>
               <button
                 onClick={onExploreMenu}
-                className="btn btn-flip"
+                className="btn btn-flip w-full md:w-auto text-center"
                 aria-label={t.ctaMenu}
               >
                 <span className="btn-flip__wrap">

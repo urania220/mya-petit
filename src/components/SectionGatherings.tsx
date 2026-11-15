@@ -29,9 +29,9 @@ export const SectionGatherings: React.FC<SectionGatheringsProps> = ({
 
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 relative z-10">
         
-        {/* Left Column (50%): Romantic Interior / Counter Image with Torn Paper Borders */}
+        {/* Left Column (50%): Interior / Counter Image with Torn Paper Borders */}
         <div className="w-full md:w-1/2">
-          <div className="relative aspect-[4/5] sm:aspect-[3/4] bg-[#FFF8F2] overflow-hidden">
+          <div className="relative aspect-[4/3] md:aspect-[3/4] bg-[#FFF8F2] overflow-hidden">
             <TornPaperFrame border={1} />
             <img
               src="/mya-assets/07_interior_pink_mint_counter.webp"
@@ -45,7 +45,7 @@ export const SectionGatherings: React.FC<SectionGatheringsProps> = ({
 
         {/* Right Column (50%): Centered Editorial Block */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
-          <div className="max-w-[440px] text-center md:text-left">
+          <div className="w-full max-w-[440px] text-center md:text-left">
             <h2 className="serif text-2xl sm:text-3xl md:text-[36px] lg:text-[42px] leading-[1.18] text-[#4c5b72] font-normal mb-5 uppercase tracking-[0.04em]">
               {t.title}
             </h2>
@@ -55,7 +55,7 @@ export const SectionGatherings: React.FC<SectionGatheringsProps> = ({
             <div>
               <button
                 onClick={onVisitClick}
-                className="btn btn-flip"
+                className="btn btn-flip w-full md:w-auto text-center"
                 aria-label={t.cta}
               >
                 <span className="btn-flip__wrap">

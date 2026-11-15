@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           {/* Right Column: Quick Links, Delivery, and Social Media (7 cols) */}
-          <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 md:gap-8">
             {/* Quick Links */}
             <div>
               <h4 className="text-xs uppercase tracking-widest font-semibold text-[#4c5b72] mb-4">
@@ -153,12 +153,12 @@ export const Footer: React.FC<FooterProps> = ({
               </ul>
             </div>
 
-            {/* Social Media */}
-            <div className="col-span-2 sm:col-span-1">
+            {/* Social Media: full-row horizontal links on mobile (<768px), 3rd vertical column on desktop */}
+            <div className="col-span-2 md:col-span-1">
               <h4 className="text-xs uppercase tracking-widest font-semibold text-[#4c5b72] mb-4">
                 {t.socialTitle}
               </h4>
-              <ul className="flex flex-col gap-2.5 text-sm serif">
+              <ul className="flex flex-row flex-wrap gap-4 md:flex-col md:gap-2.5 text-sm serif">
                 <li>
                   <a
                     href={INSTAGRAM_URL}

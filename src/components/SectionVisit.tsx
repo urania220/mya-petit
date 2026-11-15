@@ -93,15 +93,15 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
               </div>
             </div>
 
-            {/* Real Action Buttons: Get Directions + Call to Reserve */}
-            <div className="flex flex-wrap items-center gap-4">
+            {/* Real Action Buttons: 2-column grid on mobile, flex row on desktop */}
+            <div className="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:items-center md:gap-4">
               <a
                 href={GOOGLE_MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-flip"
+                className="btn btn-flip w-full md:w-auto !px-1.5 sm:!px-4 md:!px-9 !text-[8.5px] min-[390px]:!text-[9.5px] sm:!text-[11px] !tracking-[0.03em] min-[390px]:!tracking-[0.06em] md:!tracking-[0.15em] text-center"
               >
-                <span className="btn-flip__wrap flex items-center gap-2">
+                <span className="btn-flip__wrap">
                   <span>{t.getDirections}</span>
                   <span>{t.getDirections}</span>
                 </span>
@@ -109,9 +109,9 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
 
               <a
                 href="tel:+351291634523"
-                className="btn btn-flip"
+                className="btn btn-flip w-full md:w-auto !px-1.5 sm:!px-4 md:!px-9 !text-[8.5px] min-[390px]:!text-[9.5px] sm:!text-[11px] !tracking-[0.03em] min-[390px]:!tracking-[0.06em] md:!tracking-[0.15em] text-center"
               >
-                <span className="btn-flip__wrap flex items-center gap-2">
+                <span className="btn-flip__wrap">
                   <span>{t.callToReserve}</span>
                   <span>{t.callToReserve}</span>
                 </span>
@@ -121,7 +121,7 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
 
           {/* Right Column: Google Maps Embed with Torn Paper Edge Frame (5 cols) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-[4/5] bg-[#FFF8F2] overflow-hidden">
+            <div className="relative aspect-[4/3] md:aspect-[4/5] w-full bg-[#FFF8F2] overflow-hidden">
               <TornPaperFrame border={1} />
               <iframe
                 title={

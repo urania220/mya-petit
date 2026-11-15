@@ -63,7 +63,7 @@ export const SectionEditorial: React.FC<SectionEditorialProps> = ({
               href={UBER_EATS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-flip"
+              className="btn btn-flip w-full md:w-auto text-center"
               aria-label={t.orderCta}
             >
               <span className="btn-flip__wrap">
@@ -76,8 +76,8 @@ export const SectionEditorial: React.FC<SectionEditorialProps> = ({
 
         {/* Right Column (md:w-5/12) — Signature Brunch (Staggered Downward mt-8 md:mt-36) */}
         <div className="w-full md:w-5/12 flex flex-col md:mt-28 lg:mt-36">
-          {/* Tall Editorial Photo */}
-          <div className="relative aspect-[4/5] sm:aspect-[3/4] bg-[#FFF8F2] overflow-hidden mb-8">
+          {/* Editorial Photo: compact 4:3 on mobile (<768px), tall 3:4 on desktop */}
+          <div className="relative aspect-[4/3] md:aspect-[3/4] bg-[#FFF8F2] overflow-hidden mb-8">
             <TornPaperFrame border={4} />
             <img
               src="/mya-assets/04_food_savory_pancakes.webp"
@@ -98,7 +98,7 @@ export const SectionEditorial: React.FC<SectionEditorialProps> = ({
             </p>
             <button
               onClick={onExploreBrunch}
-              className="btn btn-flip"
+              className="btn btn-flip w-full md:w-auto text-center"
               aria-label={t.brunchCta}
             >
               <span className="btn-flip__wrap">
