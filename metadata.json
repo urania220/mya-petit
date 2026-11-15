@@ -1,0 +1,6 @@
+{
+  "name": "Mya Petit Café",
+  "description": "High-fidelity homepage for Mya Petit Café in Funchal, Madeira — fresh brunch, fluffy pancakes, cozy floral atmosphere, and takeaway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
