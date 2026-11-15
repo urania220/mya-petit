@@ -16,7 +16,7 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
       id="visit"
       className="relative w-full max-w-[1600px] mx-auto mt-6 md:mt-8 mb-6 md:mb-8 px-6 sm:px-10 md:px-16 lg:px-20"
     >
-      <div className="bg-[#FFF8F2] p-6 sm:p-10 md:p-14 relative overflow-hidden">
+      <div className="bg-[#FFF8F2] py-6 px-0 sm:p-10 md:p-14 relative overflow-hidden">
         
         {/* Botanical watermark */}
         <img
@@ -93,13 +93,13 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
               </div>
             </div>
 
-            {/* Real Action Buttons: 2-column grid on mobile, flex row on desktop */}
-            <div className="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:items-center md:gap-4">
+            {/* Real Action Buttons: compact wrap row */}
+            <div className="flex flex-wrap items-center gap-3 md:gap-4">
               <a
                 href={GOOGLE_MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-flip w-full md:w-auto !px-1.5 sm:!px-4 md:!px-9 !text-[8.5px] min-[390px]:!text-[9.5px] sm:!text-[11px] !tracking-[0.03em] min-[390px]:!tracking-[0.06em] md:!tracking-[0.15em] text-center"
+                className="btn btn-flip w-fit"
               >
                 <span className="btn-flip__wrap">
                   <span>{t.getDirections}</span>
@@ -109,7 +109,7 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
 
               <a
                 href="tel:+351291634523"
-                className="btn btn-flip w-full md:w-auto !px-1.5 sm:!px-4 md:!px-9 !text-[8.5px] min-[390px]:!text-[9.5px] sm:!text-[11px] !tracking-[0.03em] min-[390px]:!tracking-[0.06em] md:!tracking-[0.15em] text-center"
+                className="btn btn-flip w-fit"
               >
                 <span className="btn-flip__wrap">
                   <span>{t.callToReserve}</span>
@@ -121,7 +121,7 @@ export const SectionVisit: React.FC<SectionVisitProps> = ({ language }) => {
 
           {/* Right Column: Google Maps Embed with Torn Paper Edge Frame (5 cols) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-[4/3] md:aspect-[4/5] w-full bg-[#FFF8F2] overflow-hidden">
+            <div className="relative aspect-[4/5] w-full bg-[#FFF8F2] overflow-hidden">
               <TornPaperFrame border={1} />
               <iframe
                 title={

@@ -63,7 +63,7 @@ export const SectionEditorial: React.FC<SectionEditorialProps> = ({
               href={UBER_EATS_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-flip w-full md:w-auto text-center"
+              className="btn btn-flip w-fit"
               aria-label={t.orderCta}
             >
               <span className="btn-flip__wrap">
@@ -98,7 +98,7 @@ export const SectionEditorial: React.FC<SectionEditorialProps> = ({
             </p>
             <button
               onClick={onExploreBrunch}
-              className="btn btn-flip w-full md:w-auto text-center"
+              className="btn btn-flip w-fit"
               aria-label={t.brunchCta}
             >
               <span className="btn-flip__wrap">

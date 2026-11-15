@@ -190,7 +190,7 @@ export const SectionInstagram: React.FC<SectionInstagramProps> = ({ language }) 
           href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-flip w-full md:w-auto text-center"
+          className="btn btn-flip w-fit"
         >
           <span className="btn-flip__wrap">
             <span>{t.cta}</span>

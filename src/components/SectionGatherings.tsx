@@ -55,7 +55,7 @@ export const SectionGatherings: React.FC<SectionGatheringsProps> = ({
             <div>
               <button
                 onClick={onVisitClick}
-                className="btn btn-flip w-full md:w-auto text-center"
+                className="btn btn-flip w-fit"
                 aria-label={t.cta}
               >
                 <span className="btn-flip__wrap">

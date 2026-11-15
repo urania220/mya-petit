@@ -15,7 +15,7 @@ export const SectionAtmosphere: React.FC<SectionAtmosphereProps> = ({
   return (
     <section
       id="about"
-      className="relative w-full max-w-[1600px] mx-auto my-12 md:my-28 px-6 sm:px-10 md:px-16 lg:px-20 overflow-hidden"
+      className="relative w-full max-w-[1600px] mx-auto my-12 md:my-28 px-6 sm:px-10 md:px-16 lg:px-20 overflow-x-clip md:overflow-hidden"
     >
       {/* Background cat & floral watermark illustration */}
       <img
@@ -38,10 +38,10 @@ export const SectionAtmosphere: React.FC<SectionAtmosphereProps> = ({
       <div className="flex flex-col md:flex-row items-center relative z-10 gap-10 md:gap-0">
         
         {/* Left: Two Staggered Photo Cards with Authentic Torn-Paper Framing & Tape */}
-        <div className="w-full md:w-2/3 flex gap-4 sm:gap-8 pt-3 md:pt-0">
+        <div className="w-full md:w-2/3 flex gap-4 sm:gap-8 px-5 md:px-0 pt-4 pb-6 md:py-0">
           
           {/* Card 1: Exterior Sunny Terrace */}
-          <div className="w-1/2 relative -rotate-1 md:rotate-0">
+          <div className="w-1/2 relative -rotate-3 md:rotate-0">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] bg-[#FFF8F2] overflow-hidden">
               <TornPaperFrame border={1} />
               <img
@@ -55,7 +55,7 @@ export const SectionAtmosphere: React.FC<SectionAtmosphereProps> = ({
           </div>
 
           {/* Card 2: Intimate Floral Dining Space (Staggered Downward) */}
-          <div className="w-1/2 relative mt-4 md:mt-16 lg:mt-24 rotate-[1.2deg] md:rotate-0">
+          <div className="w-1/2 relative translate-y-4 md:translate-y-0 md:mt-16 lg:mt-24 rotate-3 md:rotate-0">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] bg-[#FFF8F2] overflow-hidden">
               <TornPaperFrame border={2} />
               <img

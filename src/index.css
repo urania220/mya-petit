@@ -231,22 +231,21 @@
 /* Authentic Tape accent */
 .tape-1 {
   position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 64px;
-  height: 32px;
+  right: -8px;
+  top: -12px;
+  width: 68px;
+  height: 34px;
   background-image: url('/mya-assets/washi-tape.webp');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.95;
-  transform: rotate(-28deg);
+  transform: rotate(32deg);
   z-index: 15;
   pointer-events: none;
 }
 
 @media (min-width: 768px) {
   .tape-1 {
-    left: auto;
     right: -25px;
     top: -16px;
     width: 96px;
